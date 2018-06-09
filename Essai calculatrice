@@ -1,0 +1,88 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+
+    cout << "Bonjour, et Bienvenue dans la calculatrice !!" << endl << endl;
+    cout << "Que voulez vous faire ?" << endl << endl;
+
+                    cout << "Taper 1 pour une multiplication" << endl;
+                    cout << "Taper 2 pour une addition"       << endl;
+                    cout << "Taper 3 pour une soustraction"   << endl;
+                    cout << "Taper 4 pour une division"       << endl;
+    int choix (0);
+    cin >> choix;
+
+    switch(choix)
+    {
+        case 1 :
+            {
+                cout << "Choisissez 2 nombres a multiplier" << endl;
+                double nombresUtilisateur1(0), nombresUtilisateur2(0);
+                cin >> nombresUtilisateur1;
+                cin >> nombresUtilisateur2;
+
+                double resultat(0);
+                resultat = nombresUtilisateur1 * nombresUtilisateur2;
+
+                cout << "le resultat est : " << resultat << endl;
+                break;
+
+            }
+
+
+        case 2 :
+            {
+                cout << "Choisissez 2 nombres a additioner" << endl;
+                double nombresUtilisateur1(0), nombresUtilisateur2(0);
+                cin >> nombresUtilisateur1;
+                cin >> nombresUtilisateur2;
+
+                double resultat(0);
+                resultat = nombresUtilisateur1 + nombresUtilisateur2;
+
+                cout << "le resultat est : " << resultat << endl;
+                break;
+
+            }
+
+
+
+        case 3 :
+            {
+                cout << "Choisissez 2 nombres a soustraire" << endl;
+                double nombresUtilisateur1(0), nombresUtilisateur2(0);
+                cin >> nombresUtilisateur1;
+                cin >> nombresUtilisateur2;
+
+                double resultat(0);
+                resultat = nombresUtilisateur1 - nombresUtilisateur2;
+
+                cout << "le resultat est : " << resultat << endl;
+                break;
+
+            }
+
+
+        case 4 :
+            {
+
+                cout << "Choisissez 2 nombres a diviser" << endl;
+                double nombresUtilisateur1(0), nombresUtilisateur2(0);
+                cin >> nombresUtilisateur1;
+                cin >> nombresUtilisateur2;
+
+                double resultat(0);
+                resultat = nombresUtilisateur1 / nombresUtilisateur2;
+
+                cout << "le resultat est : " << resultat << endl;
+                break;
+            }
+
+    }
+
+
+    return 0;
+}
